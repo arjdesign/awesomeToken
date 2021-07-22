@@ -1,0 +1,18 @@
+.aw-header {
+  background-color: var(--white);
+  padding: 0.813rem 2.5rem;
+  min-height: 4.688rem;
+  box-shadow: var(--box-shadow-sm);
+  position: relative;
+  z-index: 999;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--title {
+      color: var(--brand-primary-red);
+    }
+  }
+}

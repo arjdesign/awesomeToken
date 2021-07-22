@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import {
   Container,
   Card,
@@ -19,6 +20,7 @@ export interface ILoginProps {}
 const stylePrefix = "aw-auth-login";
 
 export default function Login(props: ILoginProps) {
+  const history = useHistory();
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>();
   const [username, setUsername] = useState<string>();
@@ -26,6 +28,39 @@ export default function Login(props: ILoginProps) {
   const handleSubmit = (event: any) => {
     event.preventDefault();
     setLoading(true);
+
+    setTimeout(() => {
+      if (username !== "" && password !== "") {
+        localStorage.removeItem("awAuthUser");
+        let user;
+        if (username === "admin@awesome.com" && password === "password") {
+          user = {
+            id: 1,
+            role: "admin",
+            name: "Awesome Admin",
+          };
+        } else if (username === "user@awesome.com" && password === "password") {
+          user = {
+            id: 2,
+            role: "user",
+            name: "Awesome User",
+          };
+        } else {
+          setLoading(false);
+          setError("Invalid User!");
+          return false;
+        }
+        localStorage.setItem("awAuthUser", JSON.stringify(user));
+        history.push({
+          pathname: user.role === "admin" ? "/dashboard" : "/wall-of-awesome",
+          state: { isPreloader: true },
+        });
+      } else {
+        setLoading(false);
+        setError("Both Username and Password field is required.");
+        return false;
+      }
+    }, 2000);
   };
 
   return (
@@ -63,7 +98,7 @@ export default function Login(props: ILoginProps) {
                     />
                   </FormGroup>
                   <FormGroup className="mb-3">
-                    <Label for="password">Pasword</Label>
+                    <Label for="password">Password</Label>
                     <Input
                       type="password"
                       name="password"

@@ -1,0 +1,17 @@
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins.scss";
+
+@import "./bootstrap.scss";
+
+@import"./colors.scss";
+@import"./fonts.scss";
+@import"./typography.scss";
+@import"./form.scss";
+
+@import"./variables.scss";
+
+// Custom Component
+@import"./custom/components/card";
+@import"./custom/components/avatar";

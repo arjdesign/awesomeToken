@@ -1,0 +1,47 @@
+form {
+    .form-group {
+        text-align: left;
+
+        label {
+            font-weight: 500;
+            color: var(--brand-natural-charcoal);
+        }
+
+        input {
+            background-color: var(--brand-natural-super-light-gray);
+            border: 1px solid var(--brand-natural-light-gray);
+            padding: 0.938rem;
+        }
+
+    }
+    
+    button.btn {
+        font-size: 1.125rem !important;
+        font-weight: 700 !important;
+    }
+
+    button.btn.full-width {
+        width: 100%;
+    }
+
+    button.btn-aw-primary {
+        background-color: var(--brand-primary-blue);
+        border-color: var(--brand-primary-blue);
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: var(--cyan);
+            border-color: var(--cyan);
+        }
+
+        &:active, &:focus {
+            background-color: var(--brand-primary-blue);
+            border-color: var(--brand-primary-blue);
+        }
+    }
+}
+
+.form-check-input {
+    width: 1rem;
+    height: 1rem;
+}

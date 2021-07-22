@@ -1,0 +1,56 @@
+:root{
+  --brand-primary-blue: #1D50AF;
+  --brand-primary-green: #1DB17E;
+  --brand-primary-red: #AF1D50;
+  --brand-primary-brown: #AF7C1D;
+  --brand-natural-charcoal: #535353;
+  --brand-natural-gray: #7E7E7E;
+  --brand-natural-light-gray: #DDDDDD;
+  --brand-natural-super-light-gray: #F9F9F9;
+  --black: #000000;
+  --white: #ffffff;
+  --cyan: #2BABC7;
+  --yellow: #f1b44c;
+  --teal: #050505;
+}
+
+$blue:              var(--brand-primary-blue);
+$green:             var(--brand-primary-green);
+$red:               var(--brand-primary-red);
+$brown:             var(--brand-primary-brown);
+$charcoal:          var(--brand-natural-charcoal);
+$gray:              var(--brand-natural-gray);
+$light-gray:        var(--brand-natural-light-gray);
+$super-light-gray:  var(--brand-natural-super-light-gray);
+$black:             var(--black);
+$white:             var(--white);
+$yellow:            var(--yellow);
+$teal:              var(--teal);
+$cyan:              var(--cyan);
+
+// scss-docs-start colors-map
+$colors: (
+    "blue":             $blue,
+    "green":            $green,
+    "red":              $red,
+    "brown":            $brown,
+    "charcoal":         $charcoal,
+    "gray":             $gray,
+    "light-gray":       $light-gray,
+    "super-light-gray": $super-light-gray,
+    "black":            $black,
+    "white":            $white,
+    "yellow":           $yellow,
+    "cyan":             $cyan,
+    "teal":             $teal
+);
+// scss-docs-end colors-map
+
+$primary:       $blue;
+$secondary:     $charcoal;
+$success:       $green;
+$info:          $cyan;
+$warning:       $brown;
+$danger:        $red;
+$light:         $light-gray;
+$dark:          $charcoal;

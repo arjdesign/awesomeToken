@@ -1,8 +1,13 @@
 import React from "react";
-import "./App.css";
+import MainNavigation from "./Navigation/MainNavigation";
 
 function App() {
-  return <div className="App">Awesome Token</div>;
+  return (
+    <div>
+      {" "}
+      <MainNavigation />
+    </div>
+  );
 }
 
 export default App;

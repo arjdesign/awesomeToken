@@ -4,7 +4,6 @@ import MainNavigation from "./Navigation/MainNavigation";
 function App() {
   return (
     <div>
-      {" "}
       <MainNavigation />
     </div>
   );

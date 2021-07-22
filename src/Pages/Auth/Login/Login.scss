@@ -1,0 +1,22 @@
+.aw-auth-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &-container {
+    text-align: center;
+
+    &--logo {
+      width: 74px;
+    }
+
+    &--title {
+      color: var(--brand-primary-red);
+    }
+
+    &--form {
+      padding: 0 1.25rem;
+    }
+  }
+}

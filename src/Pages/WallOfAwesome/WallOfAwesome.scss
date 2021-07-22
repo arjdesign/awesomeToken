@@ -1,0 +1,23 @@
+.aw-wall-of-awesome {
+  &--form {
+    &-card {
+      border: 1px solid var(--brand-natural-light-gray);
+
+      &-post-field {
+        border: none;
+        resize: none;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      &-post-tag-friend {
+        &-field {
+          border: 1px solid var(--brand-natural-light-gray);
+          padding: 0.875rem;
+          width: 150px;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}

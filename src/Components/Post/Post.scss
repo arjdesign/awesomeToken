@@ -1,0 +1,30 @@
+.aw-posts {
+  &--post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+
+    &-avatar {
+      width: 40px;
+      height: 40px;
+    }
+
+    &-detail {
+      margin-left: 0.875rem;
+
+      &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-time {
+          color: var(--brand-natural-light-gray);
+        }
+      }
+
+      &-content {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -52,7 +52,8 @@ export default function Login(props: ILoginProps) {
         }
         localStorage.setItem("awAuthUser", JSON.stringify(user));
         history.push({
-          pathname: user.role === "admin" ? "/dashboard" : "/wall-of-awesome",
+          pathname:
+            user.role === "admin" ? "/admin/create-user" : "/wall-of-awesome",
           state: { isPreloader: true },
         });
       } else {

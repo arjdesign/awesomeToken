@@ -5,9 +5,11 @@ import Post from "../../Components/Post/Post";
 import Header from "../../Components/Common/Header";
 import VerticalMenu from "../../Components/Common/VerticalMenu";
 import "./UserProfile.scss";
+
 export interface IUserProfileProps {}
 
 const stylePrefix = "aw-user-profile-page";
+
 export default function UserProfile(props: IUserProfileProps) {
   return (
     <React.Fragment>

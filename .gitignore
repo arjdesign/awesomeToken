@@ -9,6 +9,7 @@
 /coverage
 /Hackathon.code-workspace
 
+/package-lock.json
 # production
 /build
 

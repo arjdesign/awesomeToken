@@ -1,0 +1,45 @@
+.aw-user-profile-page {
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-right: 20px;
+  &--container {
+    &-profile-teaser {
+      &-header {
+        background-color: var(--brand-primary-green);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+
+        &-content {
+          color: var(--white);
+
+          h3 {
+            color: var(--white);
+            margin-bottom: 0;
+          }
+
+          &-title {
+            font-weight: 500;
+          }
+        }
+
+        &-avatar {
+          background-color: var(--white);
+          border-radius: 50%;
+          padding: 4px;
+        }
+      }
+
+      &-content-body {
+        dl {
+          display: flex;
+          dt {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[debug] [2021-07-23T01:53:19.364Z] ----------------------------------------------------------------------
+[debug] [2021-07-23T01:53:19.366Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\subed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-23T01:53:19.367Z] CLI Version:   9.16.0
+[debug] [2021-07-23T01:53:19.367Z] Platform:      win32
+[debug] [2021-07-23T01:53:19.367Z] Node Version:  v14.17.3
+[debug] [2021-07-23T01:53:19.368Z] Time:          Thu Jul 22 2021 20:53:19 GMT-0500 (Central Daylight Time)
+[debug] [2021-07-23T01:53:19.368Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-23T01:53:19.370Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-23T01:53:19.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-23T01:53:19.396Z] > authorizing via signed-in user (subedi.aarjun@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\awesomeTokenHackathon\awesome-token
+
+[debug] [2021-07-23T01:53:19.667Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-07-23T01:53:19.668Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[error] 
+[error] Error: Aborted by user.

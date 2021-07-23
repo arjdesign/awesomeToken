@@ -6,11 +6,10 @@ import VerticalMenu from "../../Components/Common/VerticalMenu";
 import Post from "../../Components/Post/Post";
 import "./WallOfAwesome.scss";
 export interface IWallOfAwesomeProps {}
-
+const stylePrefix = "aw-wall-of-awesome";
 export default function WallOfAwesome(props: IWallOfAwesomeProps) {
-  const stylePrefix = "aw-wall-of-awesome";
   return (
-    <div>
+    <React.Fragment>
       <VerticalMenu isAdmin={false} />
       <Header isLogged={true} isAdmin={false} />
       <div className={stylePrefix}>
@@ -51,6 +50,6 @@ export default function WallOfAwesome(props: IWallOfAwesomeProps) {
           <Post />
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

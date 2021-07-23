@@ -41,10 +41,10 @@ export default function VerticalMenu(props: IVerticalMenuProps) {
                 <NavLink
                   className={`${stylePrefix}--menus-item-link`}
                   activeClassName="active"
-                  to="/awesome"
+                  to="/wall-of-awesome"
                 >
                   <i className="fas fa-th-large" />
-                  #awesome
+                  #Wall of awesome
                 </NavLink>
               </li>
             )}
